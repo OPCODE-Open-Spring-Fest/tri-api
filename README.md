@@ -44,5 +44,7 @@ We welcome contributions from the community! If you'd like to contribute to this
 4. Push to the branch.
 5. Submit a pull request.
 
+Please ensure that you clarify and discuss about the issue with me before sending me a pull request, so that the issue is solved in a correct manner. 
+
 Please ensure that your code follows the project's coding standards and conventions, and include tests if applicable. Your pull request will be reviewed by the maintainers, and we'll get back to you as soon as possible.
 
