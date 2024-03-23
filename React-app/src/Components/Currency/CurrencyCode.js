@@ -2,7 +2,7 @@
 
 const CurrencyCode = () => {
   return (
-    <div>CurrencyCode</div>
+    <div>This is Currency Code</div>
   )
 }
 

@@ -10,6 +10,9 @@ const NavbarCode = () => {
             Home
           </NavLink>
         </li>
+
+        {/* Linked to their particular api */}
+        
         <li>
           <NavLink to="/cars">Cars</NavLink>
         </li>

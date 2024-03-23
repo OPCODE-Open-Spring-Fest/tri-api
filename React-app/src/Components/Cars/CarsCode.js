@@ -2,7 +2,7 @@
 
 const CarsCode = () => {
   return (
-    <div>CarsCode</div>
+    <div>This is Cars Code</div>
   )
 }
 
