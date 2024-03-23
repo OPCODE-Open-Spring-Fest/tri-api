@@ -4,6 +4,7 @@
 
 Multi-API Data Display is an open-source web application that fetches information from three different APIs and displays the data on separate pages. Each API provides unique data sets, allowing users to explore diverse content within the same application.
 
+
 ## Features
 
 - Feature 1: An IMDB API, where one can fetch all data about entertainment.
