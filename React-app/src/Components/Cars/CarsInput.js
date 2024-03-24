@@ -32,11 +32,11 @@ const CarsInput = () => {
     } else {
       setError("");
       setLoading(true); 
-      handleCarsData(limits,page);
+      // handleCarsData(limits,page);   send the data to the API
      
       setTimeout(() => {
-        setLoading(false);
-        // since there is no error data can be sent to API component
+        setLoading(false);  /// used to show the loading state
+       
       }, 200); 
     }
   };
