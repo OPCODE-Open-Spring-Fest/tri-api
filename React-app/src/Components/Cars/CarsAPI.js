@@ -9,4 +9,6 @@ const carsInstance = axios.create({
   },
 })
 
-export default carsInstance
+
+
+export default CarsAPI
