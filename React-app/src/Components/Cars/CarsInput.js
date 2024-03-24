@@ -36,7 +36,7 @@ const CarsInput = () => {
      
       setTimeout(() => {
         setLoading(false);
-        // since there is no error data can be send to API component
+        // since there is no error data can be sent to API component
       }, 200); 
     }
   };
@@ -49,50 +49,43 @@ const CarsInput = () => {
   };
 
   return (
-    <div className="flex items-top justify-center box-border m-10 mt-4 h-auto">
-      <div className="flex text-center flex-col w-full md:w-auto text-[#222831] text-lg bg-[#EEEEEE] rounded-xl p-10 shadow-md">
-        <div className="text-details text-center mb-4">
+    <div className="flex bg-[white] items-top justify-center roundex-xl box-border m-10 mt-4 h-auto">
+      <div className="flex bg-[#111827] text-center flex-col w-full md:w-auto text-[white] text-lg rounded-xl p-10 shadow-md">
+        <div className="text-details te text-center mb-4">
           Enter the details to fetch from the cars API.
         </div>
         <div className="flex flex-col md:flex-row lg:gap-3 md:gap-3 p-2 md:p-2 sm:p-2 justify-center md:justify-between input-params-container">
           <input
             value={limits}
-           
             onChange={limitChangeContainer}
             onFocus={() => handleInputFocus('limit')}
             id="limit-container"
             placeholder="Enter Limit"
-            className="block w-full md:w-auto px-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+            className="block w-full md:w-auto px-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 text-[#1E1E24]"
           />
           <input
             value={page}
-          
             onChange={pageClickChangeContainer}
             onFocus={() => handleInputFocus('page')}
             id="page-container"
             placeholder="Enter Page"
-            className="block w-full md:w-auto px-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 mt-4 md:mt-0"
+            className="block w-full md:w-auto px-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 mt-4 md:mt-0 text-[#1E1E24]"
           />
         </div>
         {!isDisabled && (
           <>
-          <button
-            
-            onClick={sendDataHandler}
-            className="bg-blue-500 mt-1 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-lg w-full md:w-auto"
-            disabled={loading} 
-          >
-            {loading ? <Loading/> : "Fetch"}
-          </button>
-           
-            </>
+            <button
+              onClick={sendDataHandler}
+              className="bg-blue-500 mt-1 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-lg w-full md:w-auto"
+              disabled={loading} 
+            >
+              {loading ? <Loading/> : "Fetch"}
+            </button>
+          </>
         )}
 
         {error && focusedInput && <div className="text-center mt-2 text-[#FF204E]">{error}</div>}
-      
-       
       </div>
-    
     </div>
   );
 };
