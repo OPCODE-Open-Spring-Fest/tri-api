@@ -1,8 +1,7 @@
 
-
 const ImdbCode = () => {
   return (
-    <div> This is IMDB Code</div>
+    <div>ImdbCode</div>
   )
 }
 

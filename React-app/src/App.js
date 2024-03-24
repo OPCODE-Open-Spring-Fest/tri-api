@@ -4,7 +4,7 @@ import NavbarCode from "./Components/Navbar/NavbarCode";
 
 import HomeCode from "./Components/Home/HomeCode";
 import CarsCode from "./Components/Cars/CarsCode";
-import ImdbCode from "./Components/IMDB/ImdbCode";
+import ImdbCode from "./Components/IMDB/imdbCode";
 import CurrencyCode from "./Components/Currency/CurrencyCode";
 
 import FooterCode from "./Components/Footer/FooterCode";
