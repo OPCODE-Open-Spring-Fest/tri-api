@@ -1,17 +1,35 @@
+
 import "./App.css";
 import CarsCode from "./Components/Cars/CarsCode";
-import CarsInput from "./Components/Cars/CarsInput";
 import HomePage from "./Components/Home/HomeCode";
 
-function App() {
- 
+import { Route, Routes } from "react-router-dom";
 
+import NavbarCode from "./Components/Navbar/NavbarCode";
+
+
+import ImdbCode from "./Components/IMDB/imdbCode";
+import CurrencyCode from "./Components/Currency/CurrencyCode";
+
+import FooterCode from "./Components/Footer/FooterCode";
+
+function App() {
   return (
+
     <div className="App">
      
-        <HomePage/>
-        <CarsCode/>
-     
+
+      <NavbarCode />
+      <Routes>
+        
+        <Route path="/" element={<HomePage />} />
+        <Route path="/cars" element={<CarsCode />} />
+        <Route path="/imdb" element={<ImdbCode />} />
+        <Route path="/currency" element={<CurrencyCode />} />
+
+      </Routes>
+      <FooterCode/>
+
     </div>
   );
 }
