@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Loading from "../Reusable/Loading";
-import { handleCarsData } from "./CarsAPI";
+
 
 const CarsInput = () => {
   const [limits, setLimits] = useState("");
@@ -32,7 +32,7 @@ const CarsInput = () => {
     } else {
       setError("");
       setLoading(true); 
-      // handleCarsData(limits,page);   send the data to the API
+      
      
       setTimeout(() => {
         setLoading(false);  /// used to show the loading state
