@@ -17,18 +17,18 @@ function App() {
   return (
 
     <div className="App">
-     
+
 
       <NavbarCode />
       <Routes>
-        
+
         <Route path="/" element={<HomePage />} />
         <Route path="/cars" element={<CarsCode />} />
         <Route path="/imdb" element={<ImdbCode />} />
         <Route path="/currency" element={<CurrencyCode />} />
 
       </Routes>
-      <FooterCode/>
+      <FooterCode />
 
     </div>
   );
